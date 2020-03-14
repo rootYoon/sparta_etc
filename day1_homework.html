@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>기획서(레이아웃) 보기</title>
+
+  <style>
+    .wrap {
+      width: 800px;
+      padding: 20px;
+      border: 1px solid black;
+      margin: 10px auto auto auto;
+    }
+
+    .order_center {
+      margin: 10px 10px 10px 10px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .photo_box {
+      width: 700px;
+      height: 400px;
+      margin: auto auto 10px auto;
+      background-image: url(https://topclass.chosun.com/upload/topp/2019-01/bimg_thumb/jelly.jpg);
+      background-size: cover;
+    }
+
+    .h1_text {
+      font-size: 40px;
+      margin: auto 20px auto auto;
+    }
+
+    .order_textalign {
+      text-align: left;
+      width: 100px;
+    }
+
+    .order_total {
+      width: 400px;
+    }
+
+    .form_size {
+      width: 300px;
+    }
+
+    .order_succes {
+      text-align: center;
+      padding: auto 50px auto 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 기획서 total -->
+  <div class="wrap">
+    <!-- 상품사진 -->
+    <div class="photo_box">
+      <img src="...">
+    </div>
+    <!-- 상품제목 -->
+    <div>
+      <div>
+        <span class="h1_text">상품제목</span><span>가격: 1,000,000원 / 개</span>
+      </div>
+      <p>이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간 망토의 늑대와 아기 돼지 삼형제의 숨결이 고루 녹아 있는 먹으면 120세까지 살 수 있다는 이 상품으로 말할 것 같으면 용왕이
+        찾지 못한 토끼의 간을 찾아 빨간마오틩 늑대와 아기 돼지..</p>
+    </div>
+    <!-- 주문하기 -->
+    <div class="order_total">
+      <h1 class="h1_text">주문하기</h1>
+      <div class="order_total">
+        <div class="order_center">
+          <span class="order_textalign">주문자 성함:</span>
+          <input type="email" class="form-control form_size" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="order_center">
+          <span class="order_textalign">수량:</span>
+          <select class="form-control form_size" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="order_center">
+          <span class="order_textalign">주소:</span>
+          <input type="email" class="form-control form_size" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="order_center">
+          <span class="order_textalign">전화번호:</span>
+          <input type="email" class="form-control form_size" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+      </div>
+    </div>
+    <div class="order_succes">
+      <button type="button" class="btn btn-outline-secondary">주문하기</button>
+    </div>
+  </div>
+</body>
+
+</html>
